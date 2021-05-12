@@ -1,5 +1,6 @@
 body {
-    color: white;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-fluid {
@@ -21,9 +22,19 @@ main {
     justify-content: space-between;
 }
 
+.logo-sidebar {
+    margin-bottom: 20px;
+}
+
+.home-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
 .sidebar-1, .sidebar-2 {
-    height: 80px;
-    background-color: darkred;
+    padding: 20px;
 }
 
 /* content */
@@ -31,30 +42,34 @@ main {
 .content {
     height: 100%;
     overflow-y: scroll;
+    width: 100%;
 }
 
 /* topbar */
 
 .topbar {
-    background-color: rgba(8,11,18,100);
+    background-color: rgba(8,11,18,0.5);
     height: 90px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-    max-width: calc((100% / 12) * 10);
-    flex-basis: calc((100% / 12) * 10);
     width: 100%;
 }
 
 .topbar button {
     margin-right: 20px;
+    background-color: rgba(8,11,18,0.5);
+    padding: 12px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    width: 240px;
 }
 
 /* navbar */
 
 .navbar {
-    background-color: rgb(143, 88, 38);
     width: 100%;
     height: 40px;
     display: flex;
@@ -63,37 +78,25 @@ main {
 }
 
 .navbar-text {
-    border: 1px solid white;
+    padding: 0 20px;
+    font-size: 12px;
 }
 
-/* section with main content (albums + name artists) */
+/* section with div albums + name artists */
 
 section {
     margin-top: 90px;
 }
 
-.recently-played {
-    margin-top: 15px;
-    border: 2px solid white;
-    width: 100%;
-    height: 200px;
-    padding: 0 10px;
+section h1 {
+    color: white;
 }
 
-.playlist-created {
-    margin-top: 15px;
-    border: 2px solid white;
+.recently-played, .playlist-created, .most-popular-artists {
+    margin-top: 30px;
     width: 100%;
     height: 200px;
-    padding: 0 10px;
-}
-
-.most-popular-artists {
-    margin-top: 15px;
-    border: 2px solid white;
-    width: 100%;
-    height: 200px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 /* footer */
@@ -106,9 +109,8 @@ footer {
     justify-content: space-between;
 }
 
-ul {
+footer ul {
     list-style: none;
-    background-color: rgb(155, 94, 73);
     height: 90px;
     width: 180px;
     display: flex;
