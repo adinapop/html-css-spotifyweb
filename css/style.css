@@ -211,8 +211,39 @@ footer {
 
 footer ul {
     height: 90px;
-    width: 180px;
     display: flex;
     align-items: center;
 }
 
+.footer-left {
+    width: 150px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-footer-left {
+    width: 100%;
+}
+
+.footer-left li {
+    padding: 5px;
+}
+
+.footer-left li h6, .footer-left li p {
+    font-size: 10px;
+}
+
+.footer-center li, .footer-end li {
+    padding: 0 15px;
+    color: white;
+}
+
+.footer-center i {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.footer-center .fa-play-circle {
+    font-size: 32px;
+}
