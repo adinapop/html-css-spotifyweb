@@ -177,8 +177,6 @@ section h6 {
     margin-top: 30px;
     width: 100%;
     padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 [class^="album-"] {
@@ -207,9 +205,39 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-footer ul {
+.footer-left {
+    margin-left: 10px;
+}
+
+.prova {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.width-img {
+    height: 50px;
+}
+
+[class*="-prova"] {
+    padding: 8px;
+}
+
+.nome-prova h6 {
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+}
+
+.nome-prova p {
+    font-size: 10px;
+    color: white;
+}
+
+/* footer ul {
     height: 90px;
     display: flex;
     align-items: center;
@@ -220,13 +248,9 @@ footer ul {
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.img-footer-left {
-    width: 100%;
-}
-
-.footer-left li {
+/* .footer-left li {
     padding: 5px;
 }
 
@@ -246,4 +270,4 @@ footer ul {
 
 .footer-center .fa-play-circle {
     font-size: 32px;
-}
+} */
