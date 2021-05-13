@@ -260,10 +260,36 @@ footer {
 .playbar-footer-center {
     color: white;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
+
+.playline-footer-center {
+    width: 400px;
+    height: 4px;
+    background-color: gray;
+    margin: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.time-footer-center {
+    font-size: 14px;
+}
+
+/* footer end */
 
 .footer-end > div {
     font-size: 14px;
     padding: 0 10px;
     color: white;
+}
+
+.playline-footer-end {
+    width: 100px;
+    height: 4px;
+    background-color: gray;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-right: 10px;
 }
