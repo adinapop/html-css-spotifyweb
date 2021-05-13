@@ -31,7 +31,7 @@ ul {
 }
 
 .sidebar-1 {
-    /* min-height: 500px; */
+    min-height: 470px;
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +54,7 @@ ul {
 
 .playlist-sidebar {
     flex-shrink: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 
@@ -70,8 +70,10 @@ ul {
     padding-right: 8px;
 }
 
+/* Sidebar 2 */
+
 .sidebar-2 {
-    height: 100px;
+    height: 150px;
 }
 
 hr {
@@ -149,13 +151,36 @@ section {
 
 section h1 {
     color: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+section p {
+    width: 100%;
+}
+
+section h6 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
 }
 
 .recently-played, .playlist-created, .most-popular-artists {
     margin-top: 30px;
     width: 100%;
-    height: 200px;
     padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="album-"] {
+    width: 150px;
+    margin: 10px;
+}
+
+[class^="album-"] > img {
+    width: 100%;
 }
 
 /* footer */
