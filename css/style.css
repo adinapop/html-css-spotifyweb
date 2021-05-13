@@ -17,6 +17,20 @@ ul {
     list-style: none;
 }
 
+/* hover */
+
+.sidebar-1 > ul > li:hover, .install-app-sidebar:hover, .navbar-text:hover {
+    color: white;
+}
+
+.topbar button:hover {
+    font-size: 16px;
+}
+
+section img:hover {
+    opacity: 0.5;
+}
+
 /* sidebar */
 
 .sidebar {
@@ -51,6 +65,7 @@ ul {
     display: flex;
     align-items: center;
 }
+
 
 .playlist-sidebar {
     flex-shrink: 1;
@@ -188,8 +203,26 @@ section h6 {
     margin-left: 0;
 }
 
-[class^="album-"] > img {
+[class^="album-"] > .cover > img {
     width: 100%;
+}
+
+.cover {
+    position: relative;
+}
+
+.hidden-play-button {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+}
+
+.cover:hover i {
+    visibility: visible;
 }
 
 .radius-img-mpa {
@@ -268,20 +301,31 @@ footer {
     width: 400px;
     height: 4px;
     background-color: gray;
-    margin: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.playline-footer-center-bg-color {
+    width: 100px;
+    height: 3px;
+    background-color: white;
     border: 1px solid transparent;
     border-radius: 50px;
 }
 
 .time-footer-center {
     font-size: 14px;
+    padding: 0 20px;
 }
 
 /* footer end */
 
+.footer-end > div > i {
+    padding: 0 10px;
+}
+
 .footer-end > div {
     font-size: 14px;
-    padding: 0 10px;
     color: white;
 }
 
@@ -292,4 +336,12 @@ footer {
     border: 1px solid transparent;
     border-radius: 50px;
     margin-right: 10px;
+}
+
+.playline-footer-end-bg-color {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50px;
 }
