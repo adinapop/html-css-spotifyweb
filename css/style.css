@@ -1,6 +1,6 @@
 body {
     color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid {
@@ -13,6 +13,10 @@ main {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 /* sidebar */
 
 .sidebar {
@@ -20,21 +24,76 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    padding: 20px;
+    font-size: 11px;
 }
 
-.logo-sidebar {
-    margin-bottom: 20px;
+.sidebar-1 {
+    /* min-height: 500px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .home-sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
-.sidebar-1, .sidebar-2 {
-    padding: 20px;
+.home-sidebar > li > i {
+    font-size: 20px;
+    padding-right: 6px;
+    vertical-align: center;
+}
+
+.home-sidebar li, .playlist-sidebar li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.playlist-sidebar {
+    flex-shrink: 1;
+    overflow-y: scroll;
+}
+
+
+/* ADD CSS SELECTOR FIRST-CHILD */
+.first-child {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.playlist-sidebar > li > i {
+    font-size: 30px;
+    padding-right: 8px;
+}
+
+.sidebar-2 {
+    height: 100px;
+}
+
+hr {
+    margin: 8px 0;
+}
+
+.install-app-sidebar .far {
+    padding-right: 6px;
+}
+
+.username-sidebar {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.username-sidebar .fas {
+    font-size: 24px;
+    color: gray;
+    padding-right: 6px;
 }
 
 /* content */
@@ -110,7 +169,6 @@ footer {
 }
 
 footer ul {
-    list-style: none;
     height: 90px;
     width: 180px;
     display: flex;
