@@ -208,11 +208,9 @@ footer {
     align-items: center;
 }
 
-.footer-left {
-    margin-left: 10px;
-}
+/* footer left */
 
-.prova {
+.footer-left, .footer-end {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,52 +220,50 @@ footer {
     height: 50px;
 }
 
-[class*="-prova"] {
+[class*="-footer-left"] {
     padding: 8px;
 }
 
-.nome-prova h6 {
-    font-size: 14px;
+.name-song-footer-left h6 {
+    font-size: 12px;
     color: white;
     font-weight: bolder;
+    line-height: 10px;
 }
 
-.nome-prova p {
+.name-song-footer-left p {
     font-size: 10px;
     color: white;
 }
 
-/* footer ul {
-    height: 90px;
+.icons-footer-left {
+    margin-left: 20px;
+}
+
+/* footer center */
+
+.buttons-footer-center {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.footer-left {
-    width: 150px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .footer-left li {
-    padding: 5px;
-}
-
-.footer-left li h6, .footer-left li p {
-    font-size: 10px;
-}
-
-.footer-center li, .footer-end li {
+.buttons-footer-center > div > i {
     padding: 0 15px;
     color: white;
 }
 
-.footer-center i {
-    padding: 0 10px;
-    font-size: 16px;
+.bigger-button-footer-center {
+    font-size: 30px;
 }
 
-.footer-center .fa-play-circle {
-    font-size: 32px;
-} */
+.playbar-footer-center {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-end > div {
+    font-size: 14px;
+    padding: 0 10px;
+    color: white;
+}
