@@ -27,9 +27,6 @@ ul {
     font-size: 16px;
 }
 
-section img:hover {
-    opacity: 0.5;
-}
 
 /* sidebar */
 
@@ -50,6 +47,10 @@ section img:hover {
     flex-direction: column;
 }
 
+.small-logo-sidebar-1 {
+    display: none;
+}
+
 .home-sidebar {
     padding: 15px 0;
 }
@@ -57,7 +58,6 @@ section img:hover {
 .home-sidebar > li > i {
     font-size: 20px;
     padding-right: 6px;
-    vertical-align: center;
 }
 
 .home-sidebar li, .playlist-sidebar li {
@@ -207,6 +207,7 @@ section h6 {
     width: 100%;
 }
 
+
 .cover {
     position: relative;
 }
@@ -221,6 +222,10 @@ section h6 {
     visibility: hidden;
 }
 
+.cover:hover img {
+    opacity: 0.5;
+}
+
 .cover:hover i {
     visibility: visible;
 }
@@ -230,52 +235,65 @@ section h6 {
     border-radius: 50%;
 }
 
-/* footer */
+/* START FOOTER */
 
 footer {
     background-color: rgba(40,40,40,255);
     height: 90px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 /* footer left */
 
-.footer-left, .footer-end {
+.footer-left {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 230px;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.image-album-footer-left {
+    width: 20%;
+}
+
+.name-song-footer-left {
+    width: 50%;
+}
+
+.icons-footer-left {
+    width: 20%;
 }
 
 .width-img {
-    height: 50px;
-}
-
-[class*="-footer-left"] {
-    padding: 8px;
+    width: 100%;
 }
 
 .name-song-footer-left h6 {
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     font-weight: bolder;
-    line-height: 10px;
 }
 
 .name-song-footer-left p {
     font-size: 10px;
-    color: white;
 }
 
-.icons-footer-left {
-    margin-left: 20px;
+.name-song-footer-left:hover p {
+    color: white;
+    text-decoration: underline;
 }
 
 /* footer center */
 
-.buttons-footer-center {
+.footer-center {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.buttons-footer-center, .playbar-footer-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,12 +321,22 @@ footer {
     background-color: gray;
     border: 1px solid transparent;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .playline-footer-center-bg-color {
     width: 100px;
-    height: 3px;
+    height: 4px;
     background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.playline-footer-center-bg-color:hover {
+    width: 100px;
+    height: 4px;
+    background-color: green;
     border: 1px solid transparent;
     border-radius: 50px;
 }
@@ -320,8 +348,20 @@ footer {
 
 /* footer end */
 
-.footer-end > div > i {
-    padding: 0 10px;
+.footer-end {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.list-footer-end, .desktop-footer-end {
+    width: 20%;
+}
+
+.volume-footer-end {
+    width:50%
 }
 
 .footer-end > div {
@@ -336,12 +376,43 @@ footer {
     border: 1px solid transparent;
     border-radius: 50px;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .playline-footer-end-bg-color {
     width: 20px;
-    height: 3px;
+    height: 4px;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 50px;
 }
+
+.playline-footer-end-bg-color:hover {
+    width: 20px;
+    height: 4px;
+    background-color: green;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.playline-footer-center .fa-circle, .playline-footer-end .fa-circle {
+    visibility: hidden;
+}
+
+/* Hover footer */
+
+
+.icons-footer-left .fa-heart:hover, .icons-footer-left .fa-folder:hover {
+    color: white;
+}
+
+/* FIX IT */
+.buttons-footer-center .bigger-button-footer-center:hover {
+    font-size: 34px;
+}
+
+/* ADD THE BUTTON IN HOVER */
+
+
+
